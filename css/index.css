@@ -1,0 +1,85 @@
+@import url('common.css');
+
+/* index.css */
+header{
+    width:60%; margin:0 auto;
+    padding:40px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header > h1{}
+header > nav{}
+header > nav > a{
+    padding:10px 20px;
+    /* 클릭범위 넓게하기위해  */
+    display: inline-block;
+}
+
+footer{
+    text-align: center;
+    padding:150px 0;
+}
+
+
+
+main{}
+.spot{
+    background:url('../img/img_spot.jpg')  no-repeat 0 0 / 100%; 
+    /* cover이미지 크기를 꽉차게 맞춤 */
+    height: 700px;
+
+    display:flex;
+    justify-content: center;
+    /* 중앙정렬 */
+    align-items:flex-end;
+    /* /세로 위치 정렬flex-end인경운 끝으로 센터는 중앙으로  strech스트레치는 세로늘임*/
+}
+
+.spot:hover{
+    background-size: 200%;
+    transition: 10s;
+    /* 문자변화는 트랜지션못주고 숫자값만 된다.  center 안먹고 100프로로*/
+}
+
+.spot > div{
+    margin-bottom:-100px;
+    /* 마이너스값주면 아래로  */
+    
+    width:780px; 
+    background-color :#fff;
+    padding:60px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4)
+    /* x  y blur color alpha    */
+}
+/* 780은이미지크기 */
+
+.spot:hover > div{
+    margin-bottom:-30px; 
+    transition: .5s;
+    /* 마우스를 올렸을 때 반응 움직임과 반응속도 transion */
+
+}
+.spot > div > h2 {}
+.spot > div > figure{
+    margin-top:20px;
+}
+.spot > div > figure > img{ width:100%}
+.spot > div > figure > figcaption{
+    text-align:center;
+    margin-top:20px;
+}
+.spot > div > figure > figcaption > a{
+    background:#333; 
+    color:#fff;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top:20px;
+
+    /* display:block;
+    width:100px;
+    margin:0 auto;   */
+
+
+}
+
